@@ -1,0 +1,10 @@
+const app = require('../index');
+var port= process.env.PORT || 3300;
+
+app.get('/',(req,res)=>{
+    res.send('BACKEND IS WORKING PROPERLY');
+});
+
+app.listen(port,()=>{
+console.log(`BACKEND IS RUNNING ON PORT ${port}`);
+});
